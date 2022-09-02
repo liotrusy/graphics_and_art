@@ -38,4 +38,4 @@ def draw_spiral(number_of_shapes, pen_size, number_of_sides, side_size, increase
     return 1
 
 
-draw_spiral(20, 3, 7, 20, 10, 10)
+draw_spiral(number_of_shapes=30, pen_size=3, number_of_sides=7, side_size=20, increase_fator=10, spin=10)
