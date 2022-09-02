@@ -19,14 +19,15 @@ def draw_spiral(number_of_shapes, pen_size, number_of_sides, side_size, increase
     window.bgcolor("black")
 
     pierre = turtle.Turtle()
-    pierre.speed(10)
+    pierre.shape("turtle")
+    pierre.speed(5)
     pierre.pensize(pen_size)
 
     background_colors = ["black", "grey", "white", "yellow"]
 
     for spiral_point in range(number_of_shapes):
         draw_multicolor_square(pierre, number_of_sides, side_size)
-        window.bgcolor(background_colors[randint(0, len(background_colors)-1)])
+        # window.bgcolor(background_colors[randint(0, len(background_colors)-1)])
         side_size += increase_fator
         pierre.forward(increase_fator)
         pierre.right(spin)
